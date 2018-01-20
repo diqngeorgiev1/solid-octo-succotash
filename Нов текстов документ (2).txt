@@ -1,0 +1,589 @@
+ using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string grad = Console.ReadLine().ToLower();
+            string transp = Console.ReadLine().ToLower();
+            string bagaj = Console.ReadLine().ToLower();
+            double ostchas = double.Parse(Console.ReadLine());
+
+            if (grad == "sofia" && transp == "car" && bagaj == "sack")
+            {
+                double nujchas = 3 * 0.01;
+                Console.WriteLine(nujchas);
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "sofia" && transp == "train" && bagaj == "sack")
+            {
+                double nujchas = 4.5 * 10 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "sofia" && transp == "foot" && bagaj == "sack")
+            {
+                {
+                    double nujchas = 55.5 * 10 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            else if (grad == "sofia" && transp == "bus" && bagaj == "sack")
+            {
+                {
+                    double nujchas = 3.7 * 10 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+
+            else if (grad == "sofia" && transp == "car" && bagaj == "backpack")
+            {
+                double nujchas = 3 * 3 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "sofia" && transp == "train" && bagaj == "backpack")
+            {
+                double nujchas = 4.5 * 3 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "sofia" && transp == "foot" && bagaj == "backpack")
+            {
+                {
+                    double nujchas = 55.5 * 3 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            else if (grad == "sofia" && transp == "bus" && bagaj == "backpack")
+            {
+                {
+                    double nujchas = 3.7 * 3 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+
+
+            else if (grad == "sofia" && transp == "foot" && bagaj == "none")
+            {
+                double nujchas = 3 - 8 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "sofia" && transp == "train" && bagaj == "none")
+            {
+                double nujchas = 4.5 - 8 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "sofia" && transp == "foot" && bagaj == "none")
+            {
+                {
+                    double nujchas = 55.5 - 8 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            else if (grad == "sofia" && transp == "bus" && bagaj == "none")
+            {
+                {
+                    double nujchas = 3.7 - 8 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+
+
+
+
+
+
+
+            else if (grad == "plovdiv" && transp == "car" && bagaj == "sack")
+            {
+                double nujchas = 4.8 * 10 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "plovdiv" && transp == "train" && bagaj == "sack")
+            {
+                double nujchas = 7 * 10 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "plovdiv" && transp == "foot" && bagaj == "sack")
+            {
+                {
+                    double nujchas = 85 * 10 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            else if (grad == "plovdiv" && transp == "bus" && bagaj == "sack")
+            {
+                {
+                    double nujchas = 6.5 * 10 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+
+
+            else if (grad == "plovdiv" && transp == "car" && bagaj == "backpack")
+            {
+                double nujchas = 4.8 * 3 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "plovdiv" && transp == "train" && bagaj == "backpack")
+            {
+                double nujchas = 7 * 3 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "plovdiv" && transp == "foot" && bagaj == "backpack")
+            {
+                {
+                    double nujchas = 85 * 3 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            else if (grad == "plovdiv" && transp == "bus" && bagaj == "backpack")
+            {
+                {
+                    double nujchas = 6.5 * 3 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+
+
+            else if (grad == "plovdiv" && transp == "car" && bagaj == "none")
+            {
+                double nujchas = 4.8 - 8 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "plovdiv" && transp == "train" && bagaj == "none")
+            {
+                double nujchas = 7 - 8 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "plovdiv" && transp == "foot" && bagaj == "none")
+            {
+                {
+                    double nujchas = 85 - 8 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            else if (grad == "plovdiv" && transp == "bus" && bagaj == "none")
+            {
+                {
+                    double nujchas = 6.5 - 8 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+            else if (grad == "bansko" && transp == "car" && bagaj == "sack")
+            {
+                double nujchas = 2.5 * 10 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "bansko" && transp == "train" && bagaj == "sack")
+            {
+                double nujchas = 4 * 10 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "bansko" && transp == "foot" && bagaj == "sack")
+            {
+                {
+                    double nujchas = 43 * 10 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            else if (grad == "bansko" && transp == "bus" && bagaj == "sack")
+            {
+                {
+                    double nujchas = 3.2 * 10 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+
+
+            else if (grad == "bansko" && transp == "car" && bagaj == "backpack")
+            {
+                double nujchas = 2.5 * 3 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "bansko" && transp == "train" && bagaj == "backpack")
+            {
+                double nujchas = 4 * 3 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "bansko" && transp == "foot" && bagaj == "backpack")
+            {
+                {
+                    double nujchas = 43 * 3 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            else if (grad == "bansko" && transp == "bus" && bagaj == "backpack")
+            {
+                {
+                    double nujchas = 3.2 * 3 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+
+
+            else if (grad == "bansko" && transp == "car" && bagaj == "none")
+            {
+                double nujchas = 2.5 - 8 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "bansko" && transp == "train" && bagaj == "none")
+            {
+                double nujchas = 4 - 8 / 100;
+                if (ostchas >= nujchas)
+                {
+                    double ostchdopraz = ostchas - nujchas;
+                    Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                }
+                else
+                {
+                    double nedostch = nujchas - ostchas;
+                    Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                }
+            }
+            else if (grad == "bansko" && transp == "foot" && bagaj == "none")
+            {
+                {
+                    double nujchas = 43 - 8 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            else if (grad == "bansko" && transp == "bus" && bagaj == "none")
+            {
+                {
+                    double nujchas = 3.2 - 8 / 100;
+                    if (ostchas >= nujchas)
+                    {
+                        double ostchdopraz = ostchas - nujchas;
+                        Console.WriteLine("{0:0.0} Hours left until New Year's evening.", ostchdopraz);
+                    }
+                    else
+                    {
+                        double nedostch = nujchas - ostchas;
+                        Console.WriteLine("Oh no, Stoyan is late. New year's evening started {0:0.0} hours ago.", nedostch);
+                    }
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
